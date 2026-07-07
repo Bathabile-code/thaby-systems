@@ -1,0 +1,10 @@
+[Unit]
+Description=Obsidian catch-up on WSL boot
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/chomi/.hermes/scripts/obsidian-catch-up.sh
+
+[Install]
+WantedBy=default.target
